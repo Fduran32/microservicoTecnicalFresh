@@ -16,7 +16,7 @@ public class TecnicoService {
 
 
 public TecnicoDto guardar (TecnicoDto dto){
-    TecnicoModel model = new TecnicoModel(null, dto.getNombre(), dto.getCargo());
+    TecnicoModel model = new TecnicoModel(null, dto.getNombre(), dto.getCargo(), dto.getLocalAsignado());
             return toDto(tecnicoRepository.save(model));
 }
 
@@ -35,6 +35,6 @@ public Boolean eliminarTecnico(Long id){
 }
 
 private TecnicoDto toDto(TecnicoModel m){
-    return new TecnicoDto(m.getId(), m.getNombre(), m.getCargo());
+    return new TecnicoDto(m.getId(), m.getNombre(), m.getCargo(), m.getLocalAsignado());
 }
 }

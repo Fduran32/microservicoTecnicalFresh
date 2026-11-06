@@ -19,5 +19,6 @@ public class TecnicoModel {
     private Long id;
     private String nombre ;
     private String cargo;
+    private String localAsignado;
 
 }

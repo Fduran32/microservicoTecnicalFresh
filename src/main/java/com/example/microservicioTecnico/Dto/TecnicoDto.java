@@ -14,4 +14,5 @@ public class TecnicoDto {
     private Long id;
     private String nombre;
     private String cargo;
+    private String localAsignado;
 }
